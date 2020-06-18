@@ -31,3 +31,12 @@ def total_money(people)
   end
   return total
 end
+
+def loan_amount(person1, person2, amount)
+  if (person1)[:monies] > amount
+    person2[:monies] += amount
+    person1[:monies] -= amount
+  else
+    return "Can't do this"
+  end
+end
