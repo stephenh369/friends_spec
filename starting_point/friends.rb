@@ -50,3 +50,13 @@ def favourite_food(people)
   end
   return snacks
 end
+
+def has_no_friends(people)
+  no_friends = []
+  for person in people
+    if (person[:friends] == [])
+      no_friends.push(person)
+    end
+  end
+  return no_friends
+end
