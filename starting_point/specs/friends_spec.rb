@@ -130,12 +130,14 @@ class TestFriends < MiniTest::Test
 
   def test_favourite_food
     result = favourite_food(@people)
-    total_snacks = "charcuterie", "soup", "bread", "Scooby snacks", "spaghetti", "ratatouille", "spinach"
+    total_snacks = ["charcuterie", "soup", "bread", "Scooby snacks", "spaghetti", "ratatouille", "spinach"]
     assert_equal(total_snacks, result)
   end
 
 
   # 9. Find people with no friends
   # (hint: return an array, there might be more people in the future with no friends!)
+
+  
 
 end

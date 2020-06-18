@@ -42,9 +42,11 @@ def loan_amount(person1, person2, amount)
 end
 
 def favourite_food(people)
-  snacks = ""
+  snacks = []
   for person in people
-    snacks += person[:favourites][:snacks].to_s
+    for snack in person[:favourites][:snacks]
+      snacks.push(snack)
+    end
   end
   return snacks
 end
