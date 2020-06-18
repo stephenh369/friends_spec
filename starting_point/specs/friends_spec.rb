@@ -79,9 +79,12 @@ class TestFriends < MiniTest::Test
     assert_equal("Baywatch", result)
   end
   # (e.g. the function favourite_tv_show(@person2) should return the string "Baywatch")
-
-
   # 3. For a given person, check if they like a particular food
+
+  def test_favourite_snack
+    result = favourite_snack(@person1)
+    assert_equal("charcuterie", result)
+  end
   # (e.g. the function likes_to_eat(@person2, "bread") should return true, likes_to_eat(@person3, "spinach") should return false)
 
   # 4. For a given person, add a new name to their list of friends
