@@ -40,3 +40,11 @@ def loan_amount(person1, person2, amount)
     return "Can't do this"
   end
 end
+
+def favourite_food(people)
+  snacks = []
+  for person in people
+    snacks.push(person[:favourites][:snacks])
+  end
+  return snacks
+end
