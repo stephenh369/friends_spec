@@ -33,7 +33,7 @@ def total_money(people)
 end
 
 def loan_amount(person1, person2, amount)
-  if (person1)[:monies] > amount
+  if (person1[:monies] > amount)
     person2[:monies] += amount
     person1[:monies] -= amount
   else
@@ -42,9 +42,9 @@ def loan_amount(person1, person2, amount)
 end
 
 def favourite_food(people)
-  snacks = []
+  snacks = ""
   for person in people
-    snacks.push(person[:favourites][:snacks])
+    snacks += person[:favourites][:snacks].to_s
   end
   return snacks
 end
